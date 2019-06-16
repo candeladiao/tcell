@@ -18,7 +18,7 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"golang.org/x/text/transform"
+	"github.com/golang/text/transform"
 )
 
 // NewSimulationScreen returns a SimulationScreen.  Note that

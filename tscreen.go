@@ -23,10 +23,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"golang.org/x/text/transform"
+	"github.com/golang/text/transform"
 
-	"github.com/gdamore/tcell/terminfo"
-	"github.com/gdamore/tcell/terminfo/dynamic"
+	"github.com/candeladiao/tcell/terminfo"
+	"github.com/candeladiao/tcell/terminfo/dynamic"
 )
 
 // NewTerminfoScreen returns a Screen that uses the stock TTY interface

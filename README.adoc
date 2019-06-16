@@ -1,14 +1,14 @@
 = tcell
 
 
-image:https://img.shields.io/travis/gdamore/tcell.svg?label=linux[Linux Status,link="https://travis-ci.org/gdamore/tcell"]
-image:https://img.shields.io/appveyor/ci/gdamore/tcell.svg?label=windows[Windows Status,link="https://ci.appveyor.com/project/gdamore/tcell"]
-image:https://img.shields.io/badge/license-APACHE2-blue.svg[Apache License,link="https://github.com/gdamore/tcell/blob/master/LICENSE"]
-image:https://img.shields.io/badge/gitter-join-brightgreen.svg[Gitter,link="https://gitter.im/gdamore/tcell"]
-image:https://img.shields.io/badge/godoc-reference-blue.svg[GoDoc,link="https://godoc.org/github.com/gdamore/tcell"]
-image:http://goreportcard.com/badge/gdamore/tcell[Go Report Card,link="http://goreportcard.com/report/gdamore/tcell"]
-image:https://codecov.io/gh/gdamore/tcell/branch/master/graph/badge.svg[codecov,link="https://codecov.io/gh/gdamore/tcell"]
-image:https://tidelift.com/badges/github/gdamore/tcell?style=flat[Dependencies]
+image:https://img.shields.io/travis/candeladiao/tcell.svg?label=linux[Linux Status,link="https://travis-ci.org/candeladiao/tcell"]
+image:https://img.shields.io/appveyor/ci/candeladiao/tcell.svg?label=windows[Windows Status,link="https://ci.appveyor.com/project/candeladiao/tcell"]
+image:https://img.shields.io/badge/license-APACHE2-blue.svg[Apache License,link="https://github.com/candeladiao/tcell/blob/master/LICENSE"]
+image:https://img.shields.io/badge/gitter-join-brightgreen.svg[Gitter,link="https://gitter.im/candeladiao/tcell"]
+image:https://img.shields.io/badge/godoc-reference-blue.svg[GoDoc,link="https://godoc.org/github.com/candeladiao/tcell"]
+image:http://goreportcard.com/badge/candeladiao/tcell[Go Report Card,link="http://goreportcard.com/report/candeladiao/tcell"]
+image:https://codecov.io/gh/candeladiao/tcell/branch/master/graph/badge.svg[codecov,link="https://codecov.io/gh/candeladiao/tcell"]
+image:https://tidelift.com/badges/github/candeladiao/tcell?style=flat[Dependencies]
 
 [cols="2",grid="none"]
 |===
@@ -20,10 +20,10 @@ image::logos/tcell.png[float="right"]
 
 ## Examples
 
-* https://github.com/gdamore/proxima5[proxima5] - space shooter (https://youtu.be/jNxKTCmY_bQ[video])
-* https://github.com/gdamore/govisor[govisor] - service management UI (http://2.bp.blogspot.com/--OsvnfzSNow/Vf7aqMw3zXI/AAAAAAAAARo/uOMtOvw4Sbg/s1600/Screen%2BShot%2B2015-09-20%2Bat%2B9.08.41%2BAM.png[screenshot])
+* https://github.com/candeladiao/proxima5[proxima5] - space shooter (https://youtu.be/jNxKTCmY_bQ[video])
+* https://github.com/candeladiao/govisor[govisor] - service management UI (http://2.bp.blogspot.com/--OsvnfzSNow/Vf7aqMw3zXI/AAAAAAAAARo/uOMtOvw4Sbg/s1600/Screen%2BShot%2B2015-09-20%2Bat%2B9.08.41%2BAM.png[screenshot])
 * mouse demo - included mouse test (http://2.bp.blogspot.com/-fWvW5opT0es/VhIdItdKqJI/AAAAAAAAATE/7Ojc0L1SpB0/s1600/Screen%2BShot%2B2015-10-04%2Bat%2B11.47.13%2BPM.png[screenshot])
-* https://github.com/gdamore/gomatrix[gomatrix] - converted from Termbox
+* https://github.com/candeladiao/gomatrix[gomatrix] - converted from Termbox
 * https://github.com/zyedidia/micro/[micro] - lightweight text editor with syntax-highlighting and themes
 * https://github.com/viktomas/godu[godu] - simple golang utility helping to discover large files/folders.
 * https://github.com/rivo/tview[tview] - rich interactive widgets for terminal UIs
@@ -103,7 +103,7 @@ regular mouse motion events, and wheel events, if your terminal supports it.
 ## _Termbox_ Compatibility
 
 A compatibility layer for _termbox_ is provided in the `compat` directory.
-To use it, try importing `github.com/gdamore/tcell/termbox`
+To use it, try importing `github.com/candeladiao/tcell/termbox`
 instead.  Most _termbox-go_ programs will probably work without further
 modification.
 
@@ -112,7 +112,7 @@ modification.
 Internally Tcell uses UTF-8, just like Go.
 However, Tcell understands how to
 convert to and from other character sets, using the capabilities of
-the `golang.org/x/text/encoding packages`.
+the `github.com/golang/text/encoding packages`.
 Your application must supply
 them, as the full set of the most common ones bloats the program by about 2MB.
 If you're lazy, and want them all anyway, see the `encoding` sub-directory.

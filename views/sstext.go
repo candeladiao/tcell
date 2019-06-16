@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/gdamore/tcell"
+	"github.com/candeladiao/tcell"
 	"unicode"
 )
 

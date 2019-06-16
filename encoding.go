@@ -18,9 +18,9 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/text/encoding"
+	"github.com/golang/text/encoding"
 
-	gencoding "github.com/gdamore/encoding"
+	gencoding "github.com/candeladiao/encoding"
 )
 
 var encodings map[string]encoding.Encoding
@@ -34,11 +34,11 @@ var encodingFallback EncodingFallback = EncodingFallbackFail
 // Windows systems use Unicode natively, and do not need any of the encoding
 // subsystem when using Windows Console screens.
 //
-// Please see the Go documentation for golang.org/x/text/encoding -- most of
+// Please see the Go documentation for github.com/golang/text/encoding -- most of
 // the common ones exist already as stock variables.  For example, ISO8859-15
 // can be registered using the following code:
 //
-//   import "golang.org/x/text/encoding/charmap"
+//   import "github.com/golang/text/encoding/charmap"
 //
 //     ...
 //     RegisterEncoding("ISO8859-15", charmap.ISO8859_15)

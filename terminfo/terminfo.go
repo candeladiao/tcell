@@ -840,7 +840,7 @@ func LookupTerminfo(name string) (*Terminfo, error) {
 
 		for _, pth := range filepath.SplitList(gopath) {
 			pth = path.Join(pth, "src", "github.com",
-				"gdamore", "tcell", "terminfo", "database")
+				"candeladiao", "tcell", "terminfo", "database")
 			files = append(files,
 				path.Join(pth, gzhfile),
 				path.Join(pth, jshfile),
