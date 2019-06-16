@@ -18,11 +18,11 @@ import (
 	"github.com/gdamore/encoding"
 	"github.com/gdamore/tcell"
 
-	"golang.org/x/text/encoding/charmap"
-	"golang.org/x/text/encoding/japanese"
-	"golang.org/x/text/encoding/korean"
-	"golang.org/x/text/encoding/simplifiedchinese"
-	"golang.org/x/text/encoding/traditionalchinese"
+	"github.com/golang/text/encoding/charmap"
+	"github.com/golang/text/encoding/japanese"
+	"github.com/golang/text/encoding/korean"
+	"github.com/golang/text/encoding/simplifiedchinese"
+	"github.com/golang/text/encoding/traditionalchinese"
 )
 
 // Register registers all known encodings.  This is a short-cut to
